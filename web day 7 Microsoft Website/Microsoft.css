@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black solid;
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+a {
+    color: rgb(87, 79, 79);
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/*------Editing container--------*/
+.container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 70px;
+}
+/*------Editing class of nav in container--------*/
+.nav-1{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;      /*----equally divide space between content-----*/
+    
+}
+/*------Editing image in nav--------*/
+.nav-1 .logo{
+    width: 110px;   /*----decrease the size of images--------*/
+}
+/*------Editing ul in nav class--------*/
+.nav-1 ul{
+    display: flex;
+}
+/*------Editing items in list in nav class--------*/
+.nav-1 ul li{
+    padding-right: 50px;    /*---- Space between list items------*/
+}
+
+.nav-1 ul li{
+    padding-right: 50px;    /*---- Space between list items------*/
+}
+/*-----Editing link-------*/
+.nav-1 ul li a{
+    border-bottom: 4px;
+}
+.nav-1 ul li a:hover{
+    border-bottom: 4px black solid;
+}
+/*------Editing ul class main-good--------*/
+.nav-1 ul.Main-good{
+    flex: 1;
+    margin-left: 20px;
+}
+/*-----Showcase editing ---------*/
+
+.btn{
+    cursor: pointer;
+    display: inline-block;    /*----move slight downthe content at this case----*/
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.btn:hover{
+    opacity: 0.9;     /*------slightly link will come below-----*/
+}
+.showcase{
+    width: 100%;
+    height: 570px;
+    background: url(./image/M-laptop.JPG);
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /*----bring the whole content to center--------*/
+    text-align: center;
+    justify-content: flex-end;     /*----bring the whole content to bottom--------*/
+    padding-bottom: 50px;
+    margin-left: 20px;
+}
+.showcase h2, .showcase p {
+    margin-bottom: 10px;   /*-----Space between upper and lower lines--------*/
+}
+.showcase .btn{
+    margin-top: 20px;
+}
+/*---Home Page------*/
+.Home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.Home img{
+    width: 100%;     /*-----use for image size decrese or increase------*/
+    height: 40%;        /*-----use for image size decrese or increase------*/
+    margin-bottom: 20px;
+    border: 1px rgb(19, 212, 226) solid;
+}
+/*-----editing the link ------*/
+.Home a{
+    display: inline-block;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: rgb(52, 163, 207);
+    font-weight: bold;
+}
+/*   XBox Editing   */
+.xbox{
+    width: 100%;
+    height: 400px;
+    background: url(./image/Abb.jpg) no-repeat
+    center center/cover;
+}
+.xbox .content{
+    width: 50%;
+    color: rgb(16, 216, 223);
+    padding: 50px 0 0 30px;
+}
+.xbox p{
+    margin: 10px 0 20px;
+    font-size: 15px;
+    color: rgb(242, 246, 244);
+}
+/*-----Clean Editing------*/
+.Clean{
+    width: 100%;
+    height: 400px;
+    background: url(./image/Morning.jpg) no-repeat
+    center center/cover;
+}
+.Clean .content{
+    width: 55%;
+    padding: 100px 0 0 70px;
+}
+.content h2{
+    color: white;
+}
+.content p7{
+    color: white;
+}
+/*-----Follow------*/
+.Follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 20px 10px;
+}
+.Follow img{
+    width: 30px;
+    height: 4;
+}
+.Follow P {
+    font-size: 32px;
+}
+.Follow * {
+    margin-right: 10px;
+}
+/*-----Links--------*/
+.Link{
+    background-color: rgb(133, 127, 127);
+    color: black solid;
+    font-size: 16px;
+    padding: 35px 0;
+}
+.Link-inner{
+    max-width: 1000px;
+    margin: o auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 10fr);     /*-----Bring everything to row-------*/
+    grid-gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Link li{
+    line-height: 2.6em;
+}
+/*-----Footer editing-----*/
+.foot{
+    background-color: rgb(121, 98, 98);
+    color: rgb(10, 10, 10);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 30px 0;
+}
+.foot div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.foot ul{
+    display: flex;
+}
+.foot li{
+    margin-right: 30px;      /*-----Space between content when they are in row form combine------*/
+    margin-bottom: 10px;
+}
+.inner-foot{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width: 700px){
+    .Home{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .Link-inner{
+        max-width: 1000px;
+        margin: o auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 10fr);     /*-----Bring everything to row-------*/
+        grid-gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
